@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>GNU/Linux</title>
+
+		<meta name="description" content="A basic presentation to world of GNU/Linux">
+		<meta name="author" content="Kenner Kliemann">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+		<link href="css/bootstrap.css" rel="stylesheet">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+	</head>
+
+	<body>
+		<!-- Start Presentation -->
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<!-- Info section -->
+				<section>
+					<section>
+						<h1>GNU/Linux Basics</h1>
+						<p>
+							<h3>UNIVERSIDADE ESTADUAL DO OESTE DO PARANÁ - UNIOESTE</h3>
+							<h3>Grupo de Pesquisa e estudos em Software Livre</h3>
+						</p>
+					</section>
+					<section>
+						<h1>Objetivo do curso</h1>
+						<p>
+							<ul>
+								<li>A filosofia e as caracteristicas de um sistema GNU/Linux</li>
+								<li>Apresentação das ferramentas básicas do sistema</li>
+							</ul>
+						</p>
+
+					</section>
+				</section>
+
+				<!-- UNIX section -->
+				<section>
+					<section>
+						<h1>Unix</h1>
+					</section>
+					<section data-state="">
+						<ul>
+							<li>O UNIX é um sistema operacional portátil, multitarefa e multiusuário</li>
+							<li>Originalmente criado por Ken Thompson, Dennis Ritchie, Douglas McIlroy e Peter Weiner, que trabalhavam nos Laboratórios Bell (Bell Labs) da <strong>AT&T</strong></li>
+							<li>A marca UNIX é uma propriedade do <i>The Open Group</i></li>
+							<li>Uma característica singular no Unix (e seus derivados) é a utilização intensiva do conceito de arquivo</li>
+							<li>Os dispositivos de entrada e saída são classificados como sendo de bloco (disco, p.ex.) ou de caractere (impressora, modem, etc.) e são associados a arquivos mantidos no diretório /dev</li>
+						</ul>
+					</section>
+					<section>
+						<h3>O UNIX é dividido básicamente em duas partes</h3>
+						<p>
+							<ul>
+								<li><strong>Núcleo do sistema (kernel): </strong>O núcleo do sistema operacional</li>
+								<li><strong>Shell: </strong> Faz interface entre o usuário e o núcleo</li>
+							</ul>
+						</p>
+						<p><img src="img/estruturasistemaUNIX.jpg"></p>
+					</section>
+
+				</section>
+
+				<!-- GPL section -->
+				<section>
+					<section>
+						<h1>Software livre</h1>
+						<iframe width="560" height="315" src="http://www.youtube.com/embed/WQ-dUcaq3zQ" frameborder="0" allowfullscreen></iframe>
+						<p>
+							<strong>Vídeo-aulas sobre software livre e tecnologia.</strong>
+							<h5><a href="http://www.kretcheu.com.br/">Kretcheu Vídeo Blog</a></h5>
+						</p>
+					</section>
+
+				</section>
+
+				<!-- GNU section -->
+				<section>
+					<section>
+						<h1>Projeto GNU</h1>
+						<p><img src="img/Gnu_meditate_levitate.jpg"></p>
+					</section>
+
+				</section>
+				<!-- Linux section -->
+				<section>
+					<section>
+						<h1>Linux</h1>
+						<img src="img/tux.jpg">
+					</section>
+					<section>
+						<h2>GNU/Linux</h2>
+						<p>
+							<img src="img/Gnulove.jpg" class="">
+						</p>
+					</section>
+				</section>
+
+				<!-- Distros e caracteristicas -->
+				<section>
+					<section>
+						<h1>Ambiente em camadas</h1>
+						<img src="img/ambCamadas.png">
+					</section>
+					<section>
+						<h1>Caracteristicas</h1>
+						<p>
+							<ul>
+								<li>É de graça</li>
+								<li>Desenvolvido voluntariamente por programadores experientes, hackers, e contribuidores espalhados ao redor do mundo</li>
+								<li>Multitarefa</li>
+								<li>Multiusuario</li>
+								<li>Proteção entre processos executados na memória RAM</li>
+								<li>Suporte ha mais de 63 terminais virtuais (consoles)</li>
+								<li>Conectividade com outros tipos de plataformas como Apple, Sun, Macintosh, Sparc, Alpha, PowerPc, ARM, Unix, Windows, DOS, etc</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<ul>
+								<li>Modularização</li>
+								<li>Não há a necessidade de se reiniciar o sistema após a modificar a configuração de qualquer periférico ou parâmetros de rede. Somente é necessário reiniciar o sistema no caso de uma instalação interna de um novo periférico, falha em algum hardware (queima do processador, placa mãe, etc.)</li>
+								<li>Suporte a diversos tipos de dispositivos </li>
+								<li>Vários tipos de firewalls de alta qualidade e com grande poder de segurança de graça</li>
+								<li>Acessa sem problemas discos formatados pelo DOS, Windows, Novell, OS/2, NTFS, SunOS, Amiga, Atari, Mac, etc</li>
+								<li>...</li>
+						</ul>
+					</section>
+					<section>
+						<h1>Distribuições</h1>
+						<p><a href="http://futurist.se/gldt/"><span>GNU/Linux Distribution Timeline</span></a></p>
+						<h5><a href="http://distrowatch.com/"><span>DistroWatch</span></a></h5>
+					</section>
+				</section>
+				<!-- Estrutura do sistema -->
+				<section>
+					<section>
+						<h1>Estrutura do Sistema</h1>
+					</section>
+					<section>
+						<h1>Terminal Virtual <i>(CONSOLE)</i></h1>
+						<p><blockquote>CTRL + ALT + F1 .. F7</blockquote></p>
+						<p><blockquote>CTRL + ALT + T</blockquote></p>
+					</section>
+
+					<section>
+						<h2>Interpretador de comandos</h2>
+						<p>
+							<strong>Também conhecido com a Shell do sistema</strong></p>
+							<p>
+								<ul>
+									<li> É o programa responsável em interpretar as instruções enviadas pelo usuário e seus programas ao sistema operacional <i>(o kernel)</i></li>
+									<li>Ele que executa comandos lidos do dispositivo de entrada padrão (teclado) ou de um arquivo executável</li>
+									<li>É a principal ligação entre o usuário, os programas e o kernel.</li>
+									<li>O GNU/Linux possui diversos tipos de interpretadores de comandos, entre eles podemos destacar o bash, ash, csh, tcsh, sh, zsh, etc</li>
+								</ul>
+							</p>
+					</section>
+
+					<section>
+						<h2>Kernel</h2>
+						<p><blockquote>É o sistema operacional (o ‘Linux’),  é ele quem controla os dispositivos e demais periféricos e do sistema (como memória, placas de som, vídeo, HD's, disquetes, sistemas de arquivos, redes e outros recursos disponíveis)</blockquote></p>
+						<p>
+							<ul>
+								<li>O kernel faz o controle dos periféricos do sistema e para isto ele deve ter o seu suporte incluído</li>
+								<li>Existe um documento que contém os periféricos suportados/não suportados pelo ‘Linux’, chamado de <a href="http://www.tldp.org/HOWTO/Hardware-HOWTO/">Hardware-HOWTO</a></li>
+								<li>Suas versões são identificadas por números como 2.4.26, 2.6.5, 2.5.75, 3.0.1, 3.1.1, 3.8.0, as versões que contém um número par entre o primeiro e segundo ponto são versões estáveis, e as que contém números ımpares neste mesmo local são versões instáveis (em desenvolvimento) </li>
+							</ul>
+						</p>
+					</section>
+
+					<section>
+						<h2>Filesystem Hierarchy Standard <a href="http://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/index.html"><span>FHS</span></a></h2>
+						<p><img src="img/FHS.jpg"></p>
+					</section>
+
+				</section>
+				<!-- Usuários e grupos -->
+				<section>
+					<section>
+						<h1>Sistema de Permissões</h1>
+					</section>
+					<section>
+						<h2>Donos, Grupos e outros</h2>
+						<p><blockquote>Sistemas operacionais multi-usuário têm de zelar pela segurança e privacidade dos dados individuais de cada usuário, bem como prezar pela integridade do sistema. Para isso existem as chamadas permissões de acesso, que atuam em dois aspectos fundamentais. O primeiro é a privacidade e o segundo, a segurança</blockquote></p>
+						<p>
+							<ul>
+								<li>O GNU/Linux tem um método muito simples de lidar com permissões. Inicialmente, elas são divididas em duas categorias: as permissões simples e as permissões especiais</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<p><blockquote>As permissões simples atuam liberando ou bloqueando o acesso à leitura, escrita e execução nos arquivos. Existem diversas formas de se demonstrar as permissões de um arquivo</blockquote></p>
+						<p>
+				            <table class="table table-striped">
+				              <thead>
+				                <tr>
+				                  <th>Permissão</th>
+				                  <th>Literal</th>
+				                  <th>Octal</th>
+				                </tr>
+				              </thead>
+				              <tbody>
+				                <tr>
+				                  <td>Leitura</td>
+				                  <td>r</td>
+				                  <td>4</td>
+				                </tr>
+				                <tr>
+				                	<td>Escrita</td>
+				                	<td>w</td>
+				                	<td>2</td>
+				                </tr>
+				                <tr>
+				                	<td>Execução</td>
+				                	<td>x</td>
+				                	<td>1</td>
+				                </tr>				                
+				              </tbody>
+				            </table>
+						</p>
+					</section>
+					<section>
+						<ol>
+							<li>Leitura <strong>r</strong>: A permissão de leitura é a que vai dizer se o usuário tem ou não direito de ver o conteúdo do arquivo ou do diretório</li>
+							<li>Escrita <strong>w</strong>: Essa permissão diz se o usuário terá ou não o direito de modificar o conteúdo do arquivo ou diretório</li>
+							<li>Execução <strong>x</strong>: Por fim, a permissão de execução especifica se o usuário pode ou não executar o arquivo, caso ele se trate de um binário ou de um script. No caso de um diretório, especifica se o usuário poderá ou não acessá-lo</li>
+						</ol>
+					</section>
+					<section>
+						<h2>As permissões podem ser aplicadas a</h2>
+						<p><strong>Dono:</strong> Chamamos de dono o usuário que criou o arquivo. O sistema de permissões no GNU/Linux permite que alteremos as permissões para nós próprios. Podemos, assim, evitar que, por exemplo, façamos alterações acidentais em arquivos importantes</p>
+						<p>A identificação do dono também é chamada de <i>userID</i> <strong>UID</strong></p>
+						<p><strong>Grupo:</strong> todo usuário do sistema GNU/Linux pertence a pelo menos um grupo. Assim, você pode definir as permissões em nível de grupo</p>
+						<p>A identificação do grupo é chamada de <i>groupID</i> <strong>GID</strong></p>
+						<p><strong>Outros: </strong>Simplesmente, todos os usuários que não são você mesmo nem pertencem ao seu grupo primário</p>
+					</section>
+					
+					<section>
+				            <table class="table table-striped ">
+				              <thead>
+				                <tr>
+				                  <th>Usuário</th>
+				                  <th>Leitura</th>
+				                  <th>Escrita</th>
+				                  <th>Execução</th>
+				                </tr>
+				              </thead>
+				              <tbody>
+				                <tr>
+				                  <td>Dono</td>
+				                  <td>Sim/Não</td>
+				                  <td>Sim/Não</td>
+				                  <td>Sim/Não</td>
+				                </tr>
+				                <tr>
+				                  <td>Grupo</td>
+				                  <td>Sim/Não</td>
+				                  <td>Sim/Não</td>
+				                  <td>Sim/Não</td>
+				                </tr>
+				                <tr>
+				                  <td>Outros</td>
+				                  <td>Sim/Não</td>
+				                  <td>Sim/Não</td>
+				                  <td>Sim/Não</td>
+				                </tr>				                
+				              </tbody>
+				            </table>
+				        <div>
+				        <p><h2>-rwxrw-rw-</h2></p>
+				        <p><strong>"-"</strong> Arquivo Regular <span>(-rw------)</span></p>
+				        <p><strong>"d"</strong> Diretório <span>(drw------)</span></p>
+				        <p><strong>"b"</strong> Dispositivo de bloco <span>(brw------)</span></p>
+				        <p><strong>"c"</strong> Dispositivo de caractere <span>(crw------)</span></p>
+				        <p><strong>"p"</strong> Canal <span>(prw------)</span></p>
+				        <p><strong>"s"</strong> Socket <span>(srw------)</span></p>
+				        </div>
+
+					</section>
+					<section>
+						<h1>Vamos Tentar !?</h1>
+						<h2>Visualizar permissões do seu diretório</h2>
+						<p><blockquote>ls</blockquote></p>
+						<p><strong>"-a"</strong></p>
+						<p><strong>"-al"</strong></p>
+						<p><strong>"-lh"</strong></p>
+					</section>
+
+				</section>
+
+				<!-- Sistema -->
+				<section>
+					<section>
+						<h1>Uso do Sistema</h1>
+					</section>
+					<section>
+						<p><strong>"su"</strong> run a shell with substitute user and group IDs</p>
+						<p><strong>"sudo"</strong> execute a command as another user</p>
+						<p><strong>"~#"</strong></p>
+					</section>
+					<section>
+						<h1>apt</h1>
+						<blockquote>
+							"No princípio era o .tar.gz. Usuários tinham que compilar cada programa que quisessem usar em seus sistemas GNU/Linux. Quando o Debian nasceu, uma nova forma de gerenciamento de pacotes tornou-se necessário. Para este sistema, foi dado o nome dpkg. Este famoso 'pacote' foi o primeiro a chegar nos sistemas GNU/Linux, enquanto antes a Red Hat decidiu criar seu próprio sistema 'RPM'.
+						</blockquote>
+					</section>
+					<section>
+						<blockquote>Um novo dilema rapidamente tomou conta das mentes dos criadores do GNU/Linux. Eles precisavam de um método rápido, prático e eficiente para instalar pacotes, que deveriam gerenciar automaticamente as dependências e cuidar dos arquivos de configuração ao atualizá-los. Aqui novamente, o Debian mostrou o caminho e deu vida ao APT, o 'Advanced Packaging Tool'</blockquote>
+						<p>-- Do Debian <a href="http://www.debian.org/doc/manuals/apt-howto/index.pt-br.html"><span>APT HOWTO</span></a></p>
+					</section>
+					<section>
+						<p><strong>"dpkg"</strong> package manager for Debian</p>
+						<p>Pacotes do tipo <blockquote>.deb</blockquote></p>
+					</section>
+					<section>
+						<p><strong>"apt"</strong> Advanced packaging tool</p>
+						<p><blockquote>O <i>apt</i> é um poderoso gerenciador de pacotes que resolve as complicações de dependências de pacotes automaticamente para o usuário, utilizando também a instalação dos pacotes via Internet. Com o apt é possível baixar a versão mais atual de um programa e instalá-lo no sistema com apenas um comando</blockquote></p>
+					</section>
+
+					<section>
+						<h2>Repositórios</h2>
+						<p>Oficiais</p>
+						<p>Locais</p>
+						<p><i><strong>ppa</strong></i> Personal Package Archive</p>
+					</section>
+
+					<section>
+						<h1>Vamos tentar !?</h1>
+						<h2>Atualizar o sistema que acabamos de instalar</h2>
+						<p><blockquote>~# apt-get</blockquote></p>
+						<p><strong>"moo"</strong></p>
+						<p><strong>"update"</strong></p>
+						<p><strong>"upgrade"</strong></p>
+						<p><strong>"install  [pacote a ser instalado]"</strong> pacote: <i>cowsay</i></p>
+					</section>
+
+				</section>
+
+				<!-- Shell tools, editors -->
+				<section>
+					<section>
+						<h1>Shell</h1>
+						<h2>Editores de texto</h2>
+					</section>
+					<section>
+						<p><strong>"vi"</strong> <a href="http://www.vivaolinux.com.br/dica/VI-O-fantastico-editor-de-textos/">.</a></p>
+						<p><strong>"vim"</strong><a href="http://www.vivaolinux.com.br/dica/Editor-Vim-Introducao-e-trabalhando-com-Vim">.</a></p>
+						<p><strong>"nano"</strong><a href="http://www.vivaolinux.com.br/artigo/Introducao-ao-Linux-O-editor-de-texto-Nano">.</a></p>
+						<p><strong>"gedit"</strong><a href="http://projects.gnome.org/gedit/">.</a></p>
+						<p><strong>"sed"</strong><a href="http://aurelio.net/sed/sed-HOWTO/">.</a></p>
+					</section>			
+				</section>
+
+				<!-- Commands -->
+				<section>
+					<section>
+						<h1>Uso das ferramentas da Shell</h1>
+					</section>
+					<section>
+						<h2>man !</h2>
+						<h2>--help !</h2>
+					</section>
+				</section>
+				<!-- Shell files/dirs commands -->
+				<section>
+					<section>
+						<h1>Manipulação de Arquivos e diretórios</h1>
+					</section>
+
+					<section>
+						<p><strong>"ls"</strong> list</p>
+						<p><strong>"cd"</strong> change directory</p>
+						<p><strong>"pwd"</strong> print working directory</p>
+						<p><strong>"mv"</strong> move</p>
+						<p><strong>"cp"</strong> copy</p>
+						<p><strong>"mkdir"</strong> make directory</p>
+						<p><strong>"rmdir"</strong> remove directory</p>
+						<p><strong>"rm"</strong> remove files or directories</p>
+						<p><strong>"ln"</strong> make links between files</p>
+					</section>
+					<section>
+						<h1>Vamos Tentar !?</h1>
+						<p>Liste o diretório e descubra as pastas disponivéis</p>
+						<p>Crie uma pasta com nome qualquer</p>
+						<p>Copie a pasta para o diretório Desktop</p>
+						<p>Liste a pasta Desktop, e veja se a pasta se encontra lá</p>
+						<p>Remova a pasta do seu diretório atual</p>
+					</section>
+				</section>
+				<!-- Manipulação de arquivos -->
+				<section>
+					<section>
+						<h1>Manipulação de Arquivos</h1>
+					</section>
+					<section>
+						<p><strong>"cat"</strong> concatenate files and print on the standard output</p>
+						<p><strong>"wc"</strong>  print the number of bytes, words, and lines in files</p>
+						<p><strong>"more"</strong> file perusal filter for crt viewing</p>
+						<p><strong>"less"</strong> opposite of more</p>
+						<p><strong>"head"</strong> output the first part of files</p>
+						<p><strong>"tail"</strong> output the last part of files</p>
+						<p><strong>"touch"</strong> change file timestamps</p>
+					</section>
+					<section>
+						<h1>Vamos Tentar !?</h1>
+						<p>Usando o cat, visualize o conteúdo do arquivo "examples.desktop"</p>
+						<p>Faça o memo, agora usando less</p>
+						<p>Qual o numero de linhas do arquivo ?</p>
+						<p>Quais são as 3 primeiras linhas ?</p>
+						<p>Imprima as ultimas 3 linhas do arquivo</p>
+					</section>
+				</section>
+			<!-- Shell redirecionamento -->
+				<section>
+					<section>
+						<h1>Entrada, Saída, Erro e Redirecionamento</h1>
+						<p><strong>Entrada (input):</strong> entrada padrão (standard input ou STDIN)</p>
+						<p><strong>Saída (output):</strong>  saída padrão (standard output ou STDOUT)</p>
+						<p><strong>Erro (error):</strong>  erro padrão (standard error ou STDERR)</p>
+						<p><img src="img/pipe.png"></p>
+					</section>
+					<section>
+						<p><strong>"<"</strong> Redireciona a entrada padrão (STDIN)</p>
+						<p><strong>">"</strong> Redireciona a saída padrão (STDOUT)</p>
+						<p><strong>"2>"</strong> Redireciona a saída de erro (STDERR)</p>
+						<p><strong>">>"</strong> Redireciona a saída padrão, anexando</p>
+						<p><strong>"2>>"</strong> Redireciona a saída de erro padrão, anexando</p>
+						<p><strong>"|"</strong> Conecta a saída padrão com a entrada padrão de outro comando</p>					
+						<p><strong>"2>&1"</strong> Conecta saída de erro na saída padrão</p>
+						<p><strong>">&2"</strong> Conecta a saída padrão na saída de erro</p>
+						<p><strong>">&-"</strong> Fecha a saída padrão</p>
+						<p><strong>"2>&-"</strong> Fecha saída de erro</p>
+						<p><strong>"<"</strong> Redireciona a entrada padrão (STDIN)</p>
+						<p><strong>"<< FIM"</strong> Alimenta a entrada padrão <i>(HERE DOCUMENT)</i></p>
+						<p><strong>"<<- FIM"</strong> Alimenta a entrada padrão, cortando Tabs</p>
+						<p><blockquote>2>&1 /dev/null</blockquote></p>
+					</section>
+				</section>
+				<!-- Compactação -->
+				<section>
+					<section>
+						<h1>Compactação</h1>
+					</section>
+					<section>
+						<p><strong>"tar"</strong> The GNU version of the tar archiving utility</p>
+						<p><strong>"bzip2" "bunzip2"</strong> a block-sorting file compressor</p>
+						<p><strong>"gzip" "gunzip"</strong>  compress or expand files</p>
+						<p><strong>"7-zip"</strong></p>
+					</section>
+				</section>
+
+				<!-- Rede -->
+				<section>
+					<section>
+						<h1>Rede</h1>
+					</section>
+					<section>
+						<p><strong>"ifconfig"</strong> configure a network interface</p>
+					</section>
+					<section>
+						<h1>Vamos Tentar !?</h1>
+						<p><blockquote>ifconfig</blockquote></p>
+					</section>
+				</section>
+
+				<!-- System and tools -->
+				<section>
+					<section>
+						<h1>Sistema e Diversos</h1>
+					</section>
+					<section>
+						<p><strong>"clear"</strong>  clear the terminal screen</p>
+						<p><blockquote>CTRL + L </blockquote></p>
+						<p><strong>"reboot" "halt" "poweroff"</strong> stop the system</p>
+						<p><strong>"shutdown"</strong> bring the system down</p>
+					</section>
+					<section>
+						<p><strong>"grep"</strong> print lines matching a pattern</p>
+						<p><a href="http://aurelio.net/regex/grep/"><span>Expressões Regulares + grep</span></a></p>
+					</section>
+				</section>
+
+				<!-- Administração  -->
+				<section>
+					<section>
+						<h1>Administração</h1>
+						<strong>usuários, grupos e permissões</strong>
+					</section>
+					<section>
+						<p><strong>"adduser"</strong> create a new user or update default new user information</p>
+						<p><strong>"useradd"</strong> create a new user or update default new user information</p>
+						<p><strong>"addgroup"</strong> add a user or group to the system</p>
+						<p><strong>"groupadd"</strong> create a new group</p>
+						<p><strong>"passwd"</strong> password file</p>
+						<p><strong>"userdel"</strong> delete a user account and related files  </p>
+						<p><strong>"id"</strong> print real and effective UIDs and GIDs </p>
+						<p><strong>"w"</strong> show who is logged on and what they are doing</p>
+						<p><strong>"chown"</strong> change file owner and group</p>
+						<p><strong>"chmod"</strong> change permissions of a file</p>
+						<p><a href="http://www.infowester.com/usuarioslinux.php"><span>...</span></a></p>
+					</section>
+					<section>
+						<h1>Vamos Tentar !?</h1>
+						
+					</section>
+				</section>
+
+				<!-- About -->
+				<section data-state="blackout">
+				</section>
+				<section>
+					<h1><blockquote>Seja livre, use Linux!</blockquote></h1>
+				</section>
+				<section>
+					<h1>!?</h1>
+				</section>
+				<section>
+					<h1>Obrigado!!!</h1>
+				</section>
+
+				<!-- Referencias -->
+				<section>
+					<section>
+						<h2>Desenvolvido por:</h2>
+						<p>Kenner A. Kliemann</p>
+						<p>Leandro J. Pagno</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<section style="top: -171px; display: block;" class="present" data-index-h="0">
+							<h1>Reveal.js</h1>
+							<h3>HTML Presentations Made Easy</h3>
+							<p>
+								<small>Created by <a href="http://hakim.se" class="roll"><span data-title="Hakim El Hattab">Hakim El Hattab</span></a> / <a href="http://twitter.com/hakimel" class="roll"><span data-title="@hakimel">@hakimel</span></a></small>
+							</p>
+						</section>
+					</section>
+				</section>
+				<section>
+					<h1>Links úteis</h1>
+					<p><a href="http://www.vivaolinux.com.br/">Viva o linux</a></p>
+					<p><a href="http://tldp.org/"> The Linux Documentation Project</a></p>
+					<p><a href="http://linux.die.net/">Linux Documentation</a></p>
+					<p><a href="https://wiki.archlinux.org/">Arch Wiki</a></p>
+					<p><a href="http://ubuntuforums.org/forum.php">Ubuntu Forums</a></p>
+					<p><a href="http://linux.about.com/">About Linux</a></p>
+					<p><a href="http://aurelio.net/shell/canivete/">Canivete suíço do Shell BASH</a></p>
+					<p><a href="http://www.guiafoca.org/">Guia Foca</a></p>
+					<p>Grupo de estudo e pesquisa em software livre<a href="https://www.facebook.com/groups/226180814179797/"><strong></strong> no Facebook</a></p>
+					<p><strong>...</strong></p>
+				</section>
+
+
+				</section><!-- End presentation -->
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
